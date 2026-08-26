@@ -1,0 +1,47 @@
+{
+  "name": "@backstage-community/plugin-cloudsmith-common",
+  "version": "0.1.0",
+  "description": "Common functionalities for the cloudsmith plugin",
+  "backstage": {
+    "role": "common-library",
+    "pluginId": "cloudsmith",
+    "pluginPackages": [
+      "@backstage-community/plugin-cloudsmith",
+      "@backstage-community/plugin-cloudsmith-backend",
+      "@backstage-community/plugin-cloudsmith-common"
+    ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts"
+  },
+  "homepage": "https://backstage.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/backstage/community-plugins",
+    "directory": "workspaces/cloudsmith/plugins/cloudsmith-common"
+  },
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "backstage-cli package build",
+    "clean": "backstage-cli package clean",
+    "lint": "backstage-cli package lint",
+    "postpack": "backstage-cli package postpack",
+    "prepack": "backstage-cli package prepack",
+    "test": "backstage-cli package test"
+  },
+  "dependencies": {
+    "@backstage/catalog-model": "backstage:^"
+  },
+  "devDependencies": {
+    "@backstage/cli": "backstage:^"
+  }
+}

@@ -41,6 +41,7 @@ yarn.lock                                                               @backsta
 /workspaces/checkmarx                                                   @backstage/community-plugins-maintainers  @Samu-izq
 /workspaces/cicd-statistics                                             @backstage/community-plugins-maintainers
 /workspaces/cloudbuild                                                  @backstage/community-plugins-maintainers
+/workspaces/cloudsmith                                                  @backstage/community-plugins-maintainers  @benjidotsh
 /workspaces/code-climate                                                @backstage/community-plugins-maintainers
 /workspaces/code-coverage                                               @backstage/community-plugins-maintainers  @alde
 /workspaces/codescene                                                   @backstage/community-plugins-maintainers

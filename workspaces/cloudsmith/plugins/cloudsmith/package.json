@@ -1,0 +1,76 @@
+{
+  "name": "@backstage-community/plugin-cloudsmith",
+  "version": "0.1.0",
+  "backstage": {
+    "role": "frontend-plugin",
+    "pluginId": "cloudsmith",
+    "pluginPackages": [
+      "@backstage-community/plugin-cloudsmith",
+      "@backstage-community/plugin-cloudsmith-backend",
+      "@backstage-community/plugin-cloudsmith-common"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://backstage.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/backstage/community-plugins",
+    "directory": "workspaces/cloudsmith/plugins/cloudsmith"
+  },
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "typesVersions": {
+    "*": {
+      "package.json": [
+        "package.json"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "backstage-cli package build",
+    "clean": "backstage-cli package clean",
+    "lint": "backstage-cli package lint",
+    "postpack": "backstage-cli package postpack",
+    "prepack": "backstage-cli package prepack",
+    "start": "backstage-cli package start",
+    "test": "backstage-cli package test"
+  },
+  "dependencies": {
+    "@backstage-community/plugin-cloudsmith-common": "workspace:^",
+    "@backstage/catalog-model": "backstage:^",
+    "@backstage/errors": "backstage:^",
+    "@backstage/frontend-plugin-api": "backstage:^",
+    "@backstage/plugin-catalog-react": "backstage:^",
+    "@backstage/ui": "backstage:^",
+    "@remixicon/react": "^4.9.0",
+    "date-fns": "^4.4.0",
+    "filesize": "^11.0.13",
+    "react-use": "^17.2.4"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@backstage/cli": "backstage:^",
+    "@backstage/frontend-dev-utils": "backstage:^",
+    "@backstage/frontend-test-utils": "backstage:^",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^16.3.2",
+    "@types/react-dom": "^18.2.19",
+    "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.4"
+  }
+}
